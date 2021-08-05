@@ -1,0 +1,5 @@
+include ':model'
+include ':pocketsphinx-android-5prealpha-release'
+include ':app'
+project(':model').projectDir = new File(rootDir, 'models/')
+rootProject.name='Thesis_sample'

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/act3_toolbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="Color Blindness Test"
+        android:background="@color/primary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="128dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/bebasneue"
+        android:layout_centerVertical="true"
+        android:textAlignment="center"
+        android:text="COLOR BLINDNESS TEST"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="40sp" />
+
+
+    <Button
+        android:id="@+id/ishihara"
+        android:layout_width="257dp"
+        android:layout_height="66dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="318dp"
+        android:background="@drawable/custom_button"
+        android:text="START"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/back_shihara"
+        android:layout_width="257dp"
+        android:layout_height="66dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="231dp"
+        android:background="@drawable/custom_button"
+        android:text="back"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:text="DEVELOPED BY: AAD"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp" />
+
+</RelativeLayout>

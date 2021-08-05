@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.iGlass">
+
+    <dist:module dist:instant="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".TestResult2"
+            android:label="TestResult2"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ColorBlindnessResultList"
+            android:parentActivityName=".Activity4"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".VisualAcuityResultList"
+            android:parentActivityName=".Activity4"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".TestResult"
+            android:label="@string/title_activity_test_result"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".brightness2"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".brightness"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".visualAcuity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ishihara"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".splashActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activity4"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activity3"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ScreenFaceDistance"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activity2"
+            android:label="Visual Acuity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
